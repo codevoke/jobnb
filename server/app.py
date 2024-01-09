@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask
 from flask_cors import CORS
 
-# from models import db
+from models import db
 from resources import api
 
 
@@ -19,7 +19,7 @@ app.config["PROPAGATE_EXCEPTIONS"] = True  # False for production
 app.config["API_CDN_URL"] = os.getenv('CDN_URL')
 
 # initialization db
-# db.init_app(app)
+db.init_app(app)
 
 # initialization api
 api.init_app(app)
