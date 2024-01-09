@@ -1,0 +1,8 @@
+python-dotenv
+unicorn
+flask
+flask-cors
+flask-restful-api
+flask-sqlalchemy
+flask-jwt-extended
+psycopg2
